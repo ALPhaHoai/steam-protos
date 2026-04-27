@@ -1,0 +1,23 @@
+[package]
+name = "steam-protos"
+version = "0.1.0"
+edition = "2021"
+description = "Steam protocol protobuf message definitions for Rust (pre-generated, no build script)."
+license = "MIT"
+repository = "https://github.com/ALPhaHoai/steam-protos"
+homepage = "https://github.com/ALPhaHoai/steam-protos"
+documentation = "https://docs.rs/steam-protos"
+authors = ["ALPhaHoai"]
+readme = "README.md"
+keywords = ["steam", "protobuf", "prost"]
+categories = ["api-bindings", "encoding", "games"]
+exclude = ["proto_cache/"]
+
+[dependencies]
+prost = "0.12"
+bytes = "1.5"
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[features]
+default = ["serde"]
+serde = ["dep:serde"]

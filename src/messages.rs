@@ -1,0 +1,52 @@
+//! Steam protobuf message modules
+
+pub mod appinfo;
+pub mod apps;
+pub mod auth;
+pub mod base;
+pub mod chat;
+pub mod chatroom;
+pub mod clientserver;
+pub mod community;
+pub mod credentials;
+pub mod csgo;
+pub mod econ;
+pub mod friends;
+pub mod gameservers;
+pub mod gc;
+pub mod login;
+pub mod loyalty_rewards;
+pub mod mms;
+pub mod notifications;
+pub mod player;
+pub mod pubfiles;
+pub mod rich_presence;
+pub mod store;
+pub mod trading;
+pub mod twofactor;
+
+// Re-export all message types at the messages level
+pub use appinfo::*;
+pub use apps::*;
+pub use auth::*;
+pub use base::*;
+pub use chat::*;
+pub use chatroom::*;
+pub use clientserver::*;
+pub use community::*;
+pub use credentials::*;
+pub use csgo::*;
+pub use econ::*;
+pub use friends::*;
+pub use gameservers::*;
+pub use gc::*;
+pub use login::*;
+pub use loyalty_rewards::*;
+pub use mms::*;
+pub use notifications::*;
+pub use player::*;
+pub use pubfiles::*;
+pub use rich_presence::*;
+pub use store::*;
+pub use trading::*;
+pub use twofactor::*;
